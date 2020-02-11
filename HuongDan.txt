@@ -1,0 +1,15 @@
+﻿
+- Tạo CodeFirist 
+EntityFramework Code First là chung ta cần phải tạo các lớp (Class) bằng C# tương ứng với mỗi Table mà ta cần
+Code First giúp ta tự động tạo ra table dựa vào các class mà ta đã cài đặt, và đồng thời tạo cho ta database chứa các table đó
+Bước 1: Ta cần install Nutget Entityframework để hổ trợ code first
+Bước 2: vào Model->add class Student.cs tương ứng là table Student
+Bước 3: cài đặt chuỗi kết nối connectstring đến sql server của ta, nhớ đặt tên cho database sao cũng được, nó sẽ tự tạo ra database theo ý ta
+Bước 4: để Code First tự tạo database và table cho ta trong sql server ta cần chạy các câu lệnh sao
+mở Packeger console lên và chạy lần lượt các câu lệnh sau
+# Enable-Migrations 
+# add-migration
+# update-databases
+
+Sau khi chạy xong ta được Folder Migrations và ta reset là SQL SERVER của ta sẽ được database vừa tự tạo ra
+
